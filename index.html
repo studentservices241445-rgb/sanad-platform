@@ -14,6 +14,15 @@ section {padding: 40px 0;}
 .table td, .table th{text-align: right;}
 .footer {background-color: #f8f9fa; padding: 20px 0; text-align: center;}
 </style>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#08e0a6">
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js');
+  });
+}
+</scrit
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
